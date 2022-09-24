@@ -34,7 +34,7 @@ function strompreisBerechnern() {
     let steuern = (stromverbrauch + grundgebühr + netzgebühr + abgaben) * 0.2
     let strompreisFin = stromverbrauch + grundgebühr + netzgebühr + abgaben + steuern
     
-    ausgabeEl.textContent = `Ihr Strompreis (inkl. Strompreisbremse): ${strompreisFin.toFixed(2)}€`
+    ausgabeEl.textContent = `Ihr Strompreis (inkl. Strompreisbremse): ${strompreisFin}€`
 }
 
 hierKlickenEl.addEventListener("click", () => {
