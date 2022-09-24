@@ -27,8 +27,12 @@ function strompreisBerechnern() {
         strompreisBremse = 30
     }
 
-    let stromverbrauch = inputEl.value
-    let strompreisFin = (stromverbrauch * strompreis - strompreisBremse) / 100
+    let stromverbrauch = (inputEl.value * strompreis - strompreisBremse) / 100
+    let grundgebühr = stromverbrauch * 0.0024
+    let netzgebühr = stromverbrauch * 0.067
+    let abgaben = stromverbrauch * 0.0012
+    let steuern = (stromverbrauch + grundgebühr + netzgebühr + abgaben) * 0.2
+    let strompreisFin = stromverbrauch + grundgebühr + netzgebühr + abgaben + steuern
     
     ausgabeEl.textContent = `Ihr Strompreis (inkl. Strompreisbremse): ${strompreisFin}€`
 }
