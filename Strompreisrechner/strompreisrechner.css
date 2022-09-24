@@ -1,0 +1,26 @@
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.popup {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 40vh;
+    z-index: 10000;
+    visibility: hidden;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(77, 82, 137);
+}

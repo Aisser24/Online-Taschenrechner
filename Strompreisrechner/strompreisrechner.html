@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="strompreisrechner.css">
+    <title>Strompreisrechner</title>
+</head>
+<body>
+    <div class="popup">
+        <h2>Strompreis ändern</h2>
+
+        <input type="text" name="Neuer Strompreis" id="strompreisNeu-el" placeholder="Neuer Strompreis in Cent">
+
+        <button class="abbrechen-el">Abbrechen</button>
+        <button class="bestätigen-el">Bestätigen</button>
+    </div>
+
+    <h3 class="header-el">Stromverbrauch in KwH (aktueller Strompreis: 50c/KwH)</h3>
+    <input type="text" class="input-el">
+    <button class="berechnen-el">Berechnen</button>
+
+    <p class="ausgabe-el">
+        Ihr Strompreis (inkl. Strompreisbremse): 
+    </p>
+
+    <footer>
+        <p class="footer">Strompreis hat sich geändet? <a class="hierKlicken-el">Hier Klicken!</a></p>
+    </footer>
+
+    <script src="strompreisrechner.js"></script>
+</body>
+</html>
